@@ -1,5 +1,10 @@
 require("lazy").setup({
-	"rebelot/kanagawa.nvim",
+	"rebelot/kanagawa.nvim",  
+    {
+        'akinsho/toggleterm.nvim',
+        version = "*",
+        config = true
+    },
 	{
 		"andweeb/presence.nvim",
 		lazy = false,
