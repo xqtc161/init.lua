@@ -1,4 +1,6 @@
 require("xqtc.remap")
+
+-- lazy.nvim setup/init
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -13,4 +15,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 require("xqtc.lazy")
 require("lazy").setup(plugins, opts)
+-- lazy.mvim END
+
 require("xqtc.set")
