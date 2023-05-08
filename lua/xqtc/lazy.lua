@@ -23,7 +23,7 @@ require("lazy").setup({
 		"goolord/alpha-nvim",
 		requires = { "nvim-tree/nvim-web-devicons" },
 		config = function()
-			require("alpha").setup(require("after.plugin.alpha-tea").config)
+			require("alpha").setup(require("xqtc.alpha-tea").config)
 		end,
 	},
 	{
