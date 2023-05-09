@@ -170,6 +170,7 @@ local buttons = {
         dashboard.button("c", "  Configuration", "<cmd>cd ~/.config/nvim/ <CR>"),
         dashboard.button("u", "  Update plugins", "<cmd>Lazy sync<CR>"),
         dashboard.button("q", "󰅚  Quit", "<cmd>qa<CR>"),
+        dashboard.button("SPC lu", "  Update LSP", "<cmd> MasonUpdate <CR> <cmd> Mason <CR>"),
     },
     position = "center",
 }
