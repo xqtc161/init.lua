@@ -1,5 +1,6 @@
 require("lazy").setup({
-	"rebelot/kanagawa.nvim",
+	{ "rebelot/kanagawa.nvim" },
+	{ "norcalli/nvim-colorizer.lua" },
 	{
 		"akinsho/toggleterm.nvim",
 		version = "*",
@@ -58,6 +59,7 @@ require("lazy").setup({
 			load = {
 				["core.defaults"] = {}, -- Loads default behaviour
 				["core.concealer"] = {}, -- Adds pretty icons to your documents
+				["core.integrations.telescope"] = {},
 				["core.dirman"] = { -- Manages Neorg workspaces
 					config = {
 						workspaces = {
@@ -67,6 +69,6 @@ require("lazy").setup({
 				},
 			},
 		},
-		dependencies = { { "nvim-lua/plenary.nvim" } },
+		dependencies = { { "nvim-lua/plenary.nvim" }, { "nvim-neorg/neorg-telescope" } },
 	},
 })
