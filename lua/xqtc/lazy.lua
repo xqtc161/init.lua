@@ -21,6 +21,13 @@ require("lazy").setup({
 	},
 	{ "tpope/vim-fugitive" },
 	{
+		"Saecki/crates.nvim",
+		dependencies = { "nvim-lua/plenary.nvim" },
+		config = function()
+			require("crates").setup()
+		end,
+	},
+	{
 		"goolord/alpha-nvim",
 		requires = { "nvim-tree/nvim-web-devicons" },
 		config = function()
