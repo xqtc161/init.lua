@@ -8,3 +8,4 @@ end)
 vim.keymap.set("n", "<leader>Gc", ":Git commit<CR>");
 vim.keymap.set("n", "<leader>GP", ":Git push<CR>");
 vim.keymap.set("n", "<leader>Gp", ":Git pull<CR>");
+vim.keymap.set("n", "<leader>Gd", ":Git diff<CR>");
