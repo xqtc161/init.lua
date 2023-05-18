@@ -1,6 +1,6 @@
 -- Line numbers
 vim.opt.nu = true
-vim.opt.relativenumber = false
+vim.opt.relativenumber = true
 
 --Indents
 vim.opt.tabstop = 4
@@ -16,8 +16,8 @@ vim.opt.wrap = true
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
-vim.opt.scrolloff = 8
+vim.opt.scrolloff = 4
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "120"
+vim.opt.colorcolumn = "80"
