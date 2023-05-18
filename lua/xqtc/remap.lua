@@ -18,6 +18,8 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- when pasting on selected text; selected text gets send to void buffer while original copied text is preserved in the clipoard
 vim.keymap.set("x", "<leader>p", '"_dP')
 
+vim.keymap.set("n", "<leader>P", '"+p')
+
 -- make current file executable
 vim.keymap.set("x", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 

@@ -16,5 +16,5 @@ vim.opt.rtp:prepend(lazypath)
 require("xqtc.lazy")
 require("lazy").setup(plugins, opts)
 -- lazy.mvim END
-
+require("xqtc.neovide")
 require("xqtc.set")
