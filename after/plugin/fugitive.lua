@@ -11,6 +11,7 @@ vim.keymap.set("n", "<leader>Gc", ":Git commit<CR>");
 vim.keymap.set("n", "<leader>GP", ":Git push<CR>");
 vim.keymap.set("n", "<leader>Gp", ":Git pull<CR>");
 vim.keymap.set("n", "<leader>Gd", ":Git diff " .. vim.api.nvim_get_current_buf() .. "<CR>");
+vim.keymap.set("n", "<leader>Gdg", ":Git diff<CR>")
 
 vim.keymap.set("n", "<leader>Gd", function()
   local current_buf = vim.api.nvim_get_current_buf()
