@@ -5,3 +5,7 @@ vim.keymap.set('n', '<leader>fg', builtin.git_files, {})
 vim.keymap.set('n', '<leader>fi', function()
 	builtin.grep_string({ search = vim.fn.input("Grep >") });
 end)
+vim.keymap.set('n', '<leader>bb', builtin.buffers, {})
+vim.keymap.set('n', '<leader>cs', builtin.colorscheme, {})
+vim.keymap.set('n', '<leader>lm', builtin.reloader, {})
+vim.keymap.set('n', '<leader>tp', builtin.builtin, {})
