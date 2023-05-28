@@ -1,5 +1,9 @@
 require("lazy").setup({
 	{ "rebelot/kanagawa.nvim" },
+	{ "zbirenbaum/copilot.lua" },
+	{
+		"zbirenbaum/copilot-cmp",
+	},
 	{ "norcalli/nvim-colorizer.lua" },
 	{
 		"akinsho/toggleterm.nvim",
