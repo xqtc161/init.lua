@@ -1,5 +1,6 @@
 require("lazy").setup({
 	{ "rebelot/kanagawa.nvim" },
+	{ "lukas-reineke/indent-blankline.nvim" },
 	{ "zbirenbaum/copilot.lua" },
 	{
 		"zbirenbaum/copilot-cmp",
