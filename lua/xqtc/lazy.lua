@@ -76,6 +76,10 @@ require("lazy").setup({
 					config = {
 						workspaces = {
 							notes = "~/notes",
+                            todo = "~/notes/Other/",
+                            math = "~/notes/Uni/Mathe/",
+                            ofp = "~/notes/Uni/Obj_Funkt_Programmieren/",
+                            networks = "~/notes/Uni/Rechnernetze/",
 						},
 					},
 				},
