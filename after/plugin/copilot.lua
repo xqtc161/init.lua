@@ -14,13 +14,16 @@ function setNodeBinPath()
         return "node"
     end
 end
-require("copilot").setup({
-	suggestions = {
-		enabled = false,
-	},
-	panel = {
-		enabled = false,
-	},
-    copilot_node_command = setNodeBinPath()
-})
-require("copilot_cmp").setup()
+
+if not isUbuntu() then
+    require("copilot").setup({
+        suggestions = {
+            enabled = false,
+        },
+        panel = {
+            enabled = false,
+        },
+        copilot_node_command = setNodeBinPath()
+    })
+    require("copilot_cmp").setup()
+end
