@@ -20,7 +20,6 @@ vim.keymap.set('n', '<leader>cs', function ()
     builtin.colorscheme(themes.get_ivy({}));
 end, {})
 
-vim.keymap.set('n', '<leader>lm', builtin.reloader, {})
 vim.keymap.set('n', '<leader>lm', function ()
     builtin.reloader(themes.get_ivy({}));
 end, {})
