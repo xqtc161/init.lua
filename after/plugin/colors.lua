@@ -1,5 +1,5 @@
 function set_colorscheme(color)
-	color = color or "kanagawa-wave"
+	color = color or "doom-one"
 	vim.cmd.colorscheme(color)
 end
 
