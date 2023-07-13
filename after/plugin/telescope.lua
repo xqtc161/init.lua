@@ -16,7 +16,6 @@ vim.keymap.set('n', '<leader>bb', function ()
     builtin.buffers(themes.get_ivy({}));
 end, {})
 
-vim.keymap.set('n', '<leader>cs', builtin.colorscheme, {})
 vim.keymap.set('n', '<leader>cs', function ()
     builtin.colorscheme(themes.get_ivy({}));
 end, {})
