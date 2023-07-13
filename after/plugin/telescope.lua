@@ -1,11 +1,31 @@
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.git_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.git_files, {})
+local themes = require('telescope.themes')
+vim.keymap.set('n', '<leader>ff', function ()
+    builtin.find_files(themes.get_ivy({}));
+end, {})
+
+vim.keymap.set('n', '<leader>fg', function ()
+    builtin.git_files(themes.get_ivy({}));
+end, {})
+
 vim.keymap.set('n', '<leader>fi', function()
 	builtin.grep_string({ search = vim.fn.input("Grep >") });
 end)
-vim.keymap.set('n', '<leader>bb', builtin.buffers, {})
+
+vim.keymap.set('n', '<leader>bb', function ()
+    builtin.buffers(themes.get_ivy({}));
+end, {})
+
 vim.keymap.set('n', '<leader>cs', builtin.colorscheme, {})
+vim.keymap.set('n', '<leader>cs', function ()
+    builtin.colorscheme(themes.get_ivy({}));
+end, {})
+
 vim.keymap.set('n', '<leader>lm', builtin.reloader, {})
-vim.keymap.set('n', '<leader>tp', builtin.builtin, {})
+vim.keymap.set('n', '<leader>lm', function ()
+    builtin.reloader(themes.get_ivy({}));
+end, {})
+
+vim.keymap.set('n', '<leader>tp', function ()
+    builtin.builtin(themes.get_ivy({}));
+end, {})
