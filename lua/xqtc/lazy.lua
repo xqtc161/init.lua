@@ -18,6 +18,9 @@ require("lazy").setup({
 		"andweeb/presence.nvim",
 		lazy = false,
 	},
+    {
+        "nvim-treesitter/nvim-treesitter-context",
+    },
 	{ "nvim-telescope/telescope.nvim" },
 	{ "nvim-lua/plenary.nvim" },
 	{ "nvim-treesitter/nvim-treesitter" },

@@ -8,6 +8,10 @@ vim.keymap.set('n', '<leader>fg', function ()
     builtin.git_files(themes.get_ivy({}));
 end, {})
 
+vim.keymap.set('n', '<leader>fgb', function ()
+    builtin.git_branches(themes.get_ivy({}));
+end, {})
+
 vim.keymap.set('n', '<leader>fi', function()
 	builtin.grep_string({ search = vim.fn.input("Grep >") });
 end)
