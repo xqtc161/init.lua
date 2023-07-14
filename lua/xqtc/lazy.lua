@@ -22,6 +22,7 @@ require("lazy").setup({
 	{ "nvim-lua/plenary.nvim" },
 	{ "nvim-treesitter/nvim-treesitter" },
 	{ "nvim-treesitter/playground" },
+    { "folke/zen-mode.nvim" },
 	{ "mbbill/undotree" },
 	{
 		"mhartington/formatter.nvim",
