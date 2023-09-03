@@ -1,8 +1,18 @@
 require("lazy").setup({
 	{ "rebelot/kanagawa.nvim" },
+    {
+        "tamton-aquib/staline.nvim",
+    },
+    {
+		"ThePrimeagen/harpoon",
+		dependencies = { "nvim-lua/plenary.nvim" },
+	},
 	{
 		"norcalli/nvim-colorizer.lua",
 	},
+	--{ "edluffy/hologram.nvim" },
+	{ "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
+
 	{ "lukas-reineke/indent-blankline.nvim" },
 	{ "zbirenbaum/copilot.lua" },
 	{
@@ -14,18 +24,18 @@ require("lazy").setup({
 		version = "*",
 		config = true,
 	},
+	--	{
+	--		"andweeb/presence.nvim",
+	--		lazy = false,
+	--	},
 	{
-		"andweeb/presence.nvim",
-		lazy = false,
+		"nvim-treesitter/nvim-treesitter-context",
 	},
-    {
-        "nvim-treesitter/nvim-treesitter-context",
-    },
 	{ "nvim-telescope/telescope.nvim" },
 	{ "nvim-lua/plenary.nvim" },
 	{ "nvim-treesitter/nvim-treesitter" },
 	{ "nvim-treesitter/playground" },
-    { "folke/zen-mode.nvim" },
+	{ "folke/zen-mode.nvim" },
 	{ "mbbill/undotree" },
 	{
 		"mhartington/formatter.nvim",
