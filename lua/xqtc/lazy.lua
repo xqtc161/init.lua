@@ -87,7 +87,11 @@ require("lazy").setup({
 		opts = {
 			load = {
 				["core.defaults"] = {}, -- Loads default behaviour
-				["core.concealer"] = {}, -- Adds pretty icons to your documents
+				["core.concealer"] = {
+					config = {
+						folds = false,
+					},
+				}, -- Adds pretty icons to your documents
 				["core.integrations.telescope"] = {},
 				["core.dirman"] = { -- Manages Neorg workspaces
 					config = {
@@ -100,9 +104,20 @@ require("lazy").setup({
 						},
 					},
 				},
+				["core.completion"] = {
+					config = {
+						engine = "nvim-cmp",
+					},
+				},
+				["core.summary"] = {},
 			},
 		},
 		dependencies = { { "nvim-lua/plenary.nvim" }, { "nvim-neorg/neorg-telescope" } },
+	},
+	{
+		"kaarmu/typst.vim",
+		ft = "typst",
+		lazy = false,
 	},
 	{
 		"lukas-reineke/headlines.nvim",
@@ -113,7 +128,7 @@ require("lazy").setup({
 		"rockerBOO/boo-colorscheme-nvim",
 		config = function()
 			require("boo-colorscheme").use({
-				italic = true, -- toggle italics
+				italic = false, -- toggle italics
 				theme = "boo",
 			})
 		end,
