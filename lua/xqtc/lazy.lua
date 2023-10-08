@@ -13,7 +13,7 @@ require("lazy").setup({
 	--{ "edluffy/hologram.nvim" },
 	{ "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
 
-	{ "lukas-reineke/indent-blankline.nvim" },
+	{ "lukas-reineke/indent-blankline.nvim", main = "ibl" },
 	{ "zbirenbaum/copilot.lua" },
 	{
 		"zbirenbaum/copilot-cmp",
@@ -37,6 +37,17 @@ require("lazy").setup({
 	{ "nvim-treesitter/playground" },
 	{ "folke/zen-mode.nvim" },
 	{ "mbbill/undotree" },
+	{
+		"pwntester/octo.nvim",
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"nvim-telescope/telescope.nvim",
+			"nvim-tree/nvim-web-devicons",
+		},
+		config = function()
+			require("octo").setup()
+		end,
+	},
 	{
 		"mhartington/formatter.nvim",
 		lazy = false,
