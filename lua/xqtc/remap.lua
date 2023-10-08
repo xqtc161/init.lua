@@ -28,3 +28,5 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 vim.keymap.set("n", "<leader>w", vim.cmd.FormatWrite)
 vim.keymap.set("n", "<leader>hh", vim.cmd.Alpha)
+
+vim.keymap.set("n", "<leader>nt", ":Neotree toggle left<CR>")

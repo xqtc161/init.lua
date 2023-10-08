@@ -8,12 +8,21 @@ require("lazy").setup({
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
 	{
+		"nvim-neo-tree/neo-tree.nvim",
+		branch = "v3.x",
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+			"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+			"MunifTanjim/nui.nvim",
+		},
+	},
+	{
 		"norcalli/nvim-colorizer.lua",
 	},
 	--{ "edluffy/hologram.nvim" },
 	{ "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
 
-	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {}},
+	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 	{ "zbirenbaum/copilot.lua" },
 	{
 		"zbirenbaum/copilot-cmp",
