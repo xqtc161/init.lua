@@ -13,7 +13,7 @@ require("lazy").setup({
 	--{ "edluffy/hologram.nvim" },
 	{ "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
 
-	{ "lukas-reineke/indent-blankline.nvim", main = "ibl" },
+	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {}},
 	{ "zbirenbaum/copilot.lua" },
 	{
 		"zbirenbaum/copilot-cmp",
